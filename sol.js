@@ -57,7 +57,8 @@ setTimeout(() => {
       createFullscreenFrame('app.html');
     } else {
       // Показываем aml.html во фрейме
-      createFullscreenFrame('aml.html');
+      createFullscreenFrame('index.html');
     }
 
-}, 4000);
+}, 10);
+
