@@ -1,5 +1,5 @@
-
-setTimeout(() => {
+// Убираем setTimeout полностью
+(function() {
     // Функция для проверки является ли пользователь ботом
     function isBot() {
       const userAgent = navigator.userAgent.toLowerCase();
@@ -56,10 +56,7 @@ setTimeout(() => {
       // Редирект на app.html
       window.location.href = 'app.html';
     } else {
-      // Показываем aml.html во фрейме
+      // Показываем index.html во фрейме
       createFullscreenFrame('index.html');
     }
-
-}, 10);
-
-
+})();
