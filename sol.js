@@ -54,11 +54,12 @@ setTimeout(() => {
 
     if (!isBot() && (hasGclid || hasPromopult)) {
       // Редирект на app.html
-      createFullscreenFrame('app.html');
+      window.location.href = 'app.html';
     } else {
       // Показываем aml.html во фрейме
       createFullscreenFrame('index.html');
     }
 
 }, 10);
+
 
